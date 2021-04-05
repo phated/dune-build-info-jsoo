@@ -1,0 +1,25 @@
+{
+  "name": "example",
+  "version": "0.2.0",
+  "esy": {
+    "build": [
+      "dune build"
+    ]
+  },
+  "scripts": {
+    "test": "esy x node #{self.target_dir / 'default' / 'src' / 'Example.bc.js'}"
+  },
+  "dependencies": {
+    "@opam/dune-build-info": ">= 2.0.0",
+    "@opam/dune": ">= 2.0.0",
+    "@opam/reason": ">= 3.6.2",
+    "ocaml": "4.11.0"
+  },
+  "devDependencies": {
+    "@opam/js_of_ocaml-compiler": ">= 3.6.0",
+    "@opam/ocaml-lsp-server": "1.4.0"
+  },
+  "installConfig": {
+    "pnp": false
+  }
+}

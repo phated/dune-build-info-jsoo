@@ -1,0 +1,5 @@
+(executable
+ (name Example)
+ (modes js)
+ (modules Example)
+ (libraries dune-build-info))
