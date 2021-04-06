@@ -3,11 +3,12 @@
   "version": "0.2.0",
   "esy": {
     "build": [
-      "dune build"
+      "dune build",
+      "dune install --prefix _install"
     ]
   },
   "scripts": {
-    "test": "esy x node #{self.target_dir / 'default' / 'src' / 'Example.bc.js'}"
+    "test": "esy x node #{'_install' / 'bin' / 'Example.bc.js'}"
   },
   "dependencies": {
     "@opam/dune-build-info": ">= 2.0.0",

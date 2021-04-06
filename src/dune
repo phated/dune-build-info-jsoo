@@ -3,3 +3,7 @@
  (modes js)
  (modules Example)
  (libraries dune-build-info))
+
+(install
+ (section bin)
+ (files Example.bc.js))
